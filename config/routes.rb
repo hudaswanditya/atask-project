@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  mount Rswag::Ui::Engine => '/api-docs'
-  mount Rswag::Api::Engine => '/api-docs'
   # Authentication routes
   post 'users/sign_in',to: 'users#sign_in' # Sign-in
   delete 'users/sign_out', to: 'users#sign_out' # Sign-out
